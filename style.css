@@ -11,9 +11,9 @@ body{
     align-items: center;
     height: 100vh;
 }
+
 .container{
-    display: flex;
-    flex-direction: column;
+    
     background-color: #1D1E2C ;
     padding: 20px;
     width: 400px;
@@ -37,16 +37,31 @@ body{
     background-color: #0d323a;
     color: #E8F1F2 ;
 }
-#add-task-btn{
+#add-task-btn, #clear-tasks-btn{
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     background-color: #55828B ;
     color: #E8F1F2 ;
     cursor: pointer;
+    margin-left: 5px;
 }
 
-#add-task-btn:hover{
+#add-task-btn:hover, #clear-tasks-btn:hover{
     background-color: #203135;
     color: #7fc7d6 ;
+}
+#task-list{
+    list-style: none;
+    width: 100%;
+    
+    padding: 10px;
+    border-radius: 5px;
+    color: #364958 ;
+}
+#task-list li {
+    background-color: #f2f2f2;
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 8px;
 }
